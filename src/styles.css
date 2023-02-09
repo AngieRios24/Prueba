@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.letra{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+  }
+  header {width:100%; min-height:80px; height:130px;background-color:#2e3f66; position:relative;}
+  /* .contenedor{width:auto; height:auto; position:relative; overflow-x:auto; overflow-y:hidden;  margin-top: 2%;
+      margin-left: 35%;} */
+  
+  
+  
+  .tabla_generica {width:auto; min-width:350px; margin:0 auto; border-collapse:collapse; text-align:center; border:1px;}
+.tabla_generica th {border-collapse:collapse; background-color:#044C6E ; font-size:12px; color:#fff; height:28px; border:1px solid #fff; padding: 4px; min-width: 70px;}
+.tabla_generica tr {border-collapse:collapse;}
+.tabla_generica td {font-size:12px; color:#071014 ; padding:7px; border:1px solid #044C6E; border-collapse:collapse;}
+.texto_centrado{
+  text-align: center;
+  margin-top: 20px;
+}
+
+  
+  
