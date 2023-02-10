@@ -22,11 +22,9 @@
                 <td>{{persona.genero}}</td>
                 <td>{{persona.ciudad}}</td>
                 <td>{{persona.pais}}</td>
-                <td><button class="button button_generico" (click)="editarPersona(persona)" value="Editar">
-
-                    </button>
-                    <!-- <a (click)="editarPersona(persona)" ><i
-                    class="fa fa-edit ico_md" title="Editar"></i> </a> -->
+                <td>
+                    <a (click)="editarPersona(persona)" ><i
+                    class="fa fa-edit ico_md" title="Editar"></i> </a>
                 </td>
             </tr>
         </table>
@@ -66,7 +64,7 @@
              
             </table>
             <div class="texto_centrado">
-                <button class="button button_generico" (click)="consultarPersonas()">Volver</button>
+                <button class="button button_generico" (click)="consultarPersonas()">Regresar</button>
              
             </div>
         </div>
