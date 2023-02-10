@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class peticiones {
-    private readonly URLAPI: string = 'http://localhost/prueba/index.php';
+    private readonly URLAPI: string = 'http://localhost/Api-prueba/index.php';
     http = new HttpHeaders({ 'Content-Type': 'application/json' });
 
     constructor(private _http: HttpClient) { }
