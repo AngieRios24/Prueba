@@ -1,0 +1,76 @@
+<div class="contenedor">
+    <br><br><br>
+    <div *ngIf="tipo=='personas'">
+        <table class="tabla_generica">
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Cédula</th>
+                <th>Correo</th>
+                <th>Edad</th>
+                <th>Genero</th>
+                <th>Ciudad</th>
+                <th>País</th>
+                <th>Opciones</th>
+            </tr>
+            <tr *ngFor="let persona of personas">
+                <td>{{persona.nombres}}</td>
+                <td>{{persona.apellidos}}</td>
+                <td>{{persona.cedula}}</td>
+                <td>{{persona.correo}}</td>
+                <td>{{persona.edad}}</td>
+                <td>{{persona.genero}}</td>
+                <td>{{persona.ciudad}}</td>
+                <td>{{persona.pais}}</td>
+                <td><button class="button button_generico" (click)="editarPersona(persona)" value="Editar">
+
+                    </button>
+                    <!-- <a (click)="editarPersona(persona)" ><i
+                    class="fa fa-edit ico_md" title="Editar"></i> </a> -->
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div *ngIf="tipo=='persona'">
+        <div class="contenedor_tablas">
+            <table class="tabla_generica" layout-align="center center">
+                <tr>
+                    <th>Nombre</th>
+                    <td>{{persona.nombres}}</td>
+                    <th>Apellidos</th>
+                    <td>{{persona.apellidos}}</td>
+                  
+                </tr>
+                <tr>
+                    <th >Cédula</th>
+                    <td>{{persona.cedula}}</td>
+                    <th >Correo</th>
+                    <td>{{persona.correo}}</td>
+                   
+                </tr>
+                <tr>
+                    <th >Edad</th>
+                    <td>{{persona.edad}}</td>
+                    <th >Genero</th>
+                    <td>{{persona.genero}}</td>
+                   
+                </tr>
+                <tr>
+                    <th>Ciudad</th>
+                    <td>{{persona.ciudad}}</td>
+                    <th >Pais</th>
+                    <td>{{persona.pais}}</td>
+                  
+                </tr>
+                
+             
+            </table>
+            <div class="texto_centrado">
+                <button class="button button_generico" (click)="consultarPersonas()">Volver</button>
+             
+            </div>
+        </div>
+
+    </div>
+
+</div>
